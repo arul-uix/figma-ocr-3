@@ -17,7 +17,7 @@ module.exports = async function handler(req, res) {
         'Authorization': 'Bearer ' + process.env.OPENROUTER_API_KEY
       },
       body: JSON.stringify({
-        model: 'google/gemini-2.0-flash-001',
+        model: 'google/gemini-flash-1.5',
         messages: [{
           role: 'user',
           content: [
